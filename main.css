@@ -63,7 +63,7 @@ body {
 }
 
 #empty {
-    opacity: 0%;
+    background-image: none;
     z-index: 3;
 }
 
