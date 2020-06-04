@@ -67,6 +67,11 @@ body {
     z-index: 3;
 }
 
+#empty:hover {
+    border: none;
+    cursor: auto;
+}
+
 .timer {   
     text-align: center;
     font-size: 40px;
