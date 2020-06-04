@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    outline: none;
+    font-family: 'Sriracha', cursive;
+}
+
+body {
+    background-color: rgb(228, 199, 161);
+    
+}
+
+.container {
+    max-width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px;
+    margin: 0 auto;
+}
+
+.desk {
+    width: 410px;
+    height: 410px;
+    background-image: url(desk.jpg);
+    background-repeat: no-repeat;
+    border: solid 5px rgb(110, 33, 33);
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 2%;
+}
+
+.brick {
+    width: 100px;
+    height: 100px;
+    background-image: url(brick.jpg);
+    color: rgb(228, 203, 170);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    border-radius: 5%;
+    transition: linear .15s;
+    z-index: 2;
+    font-weight: 100;
+    position: relative;
+}
+
+.brick > div {
+    text-align: center;
+    height: 100px;
+    width: 100px;
+}
+
+.brick:hover {
+    cursor: pointer;
+    border: rgb(247, 210, 131) 1px solid;
+}
+
+.brick div:hover {
+    margin: 2px 0 0 2px;
+}
+
+#empty {
+    opacity: 0%;
+    z-index: 3;
+}
+
+.timer {   
+    text-align: center;
+    font-size: 40px;
+    color: rgb(110, 33, 33);
+}
+
+.stats {
+    text-align: center;
+}
+
+.start {
+    width: 200px;
+    text-align: center;
+    background-color: rgb(247, 210, 131);
+    border: solid 3px rgb(110, 33, 33);
+    border-radius: 3%;
+    transition: linear .2s;
+}
+
+.start:hover {
+    background-color: rgb(110, 33, 33);
+    border-color: rgb(247, 210, 131);
+    color: rgb(247, 210, 131);
+    cursor: pointer;
+}
+
+.count, .start, .timer {
+    font-size: 40px;
+    font-weight: 500;
+    color: rgb(110, 33, 33);
+    margin-bottom: 30px;
+}
+
+.win {
+    position: fixed;
+    top: 20%;
+    left: 10%;
+    width: 80%;
+    height: 70%;
+    border-radius: 5px;
+    border: solid rgb(78, 20, 20) 5px;
+    background-color: rgb(131, 192, 107);
+    z-index: 5;
+    color: rgb(78, 20, 20);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.congrats {
+    width: 100%;
+    margin: 20px 0 0;
+    font-size: 30px;
+    text-align: center;
+}
+
+.again:hover {
+    color: black;
+    cursor: pointer;
+}
